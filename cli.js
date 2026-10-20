@@ -93,6 +93,9 @@ async function runAndMaybePost(trigger) {
   const report = await runSmokeTest({ trigger });
   const believedNew = Boolean(report.hashCompare && report.hashCompare.release && report.hashCompare.release.believedNew);
   logLine(`${report.human.headline} · ${report.human.smoke}`);
+  if (report.snapshot && report.snapshot.mdPath) {
+    logLine(`Saved snapshot ${report.snapshot.stamp}${report.snapshot.committed ? " and committed" : ""}${report.snapshot.pushed ? " / pushed" : ""}`);
+  }
   if (trigger === "watch" && !shouldPostWatch(report.hashCompare)) {
     logLine("No new drop since the last Feishu post. Skipping send.");
     return { posted: false, report };
