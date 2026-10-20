@@ -72,6 +72,10 @@ function git(args, opts = {}) {
   return spawnSync("git", args, {
     cwd: ROOT,
     encoding: "utf8",
+    env: {
+      ...process.env,
+      GH_CONFIG_DIR: process.env.GH_CONFIG_DIR || "/Users/aruntdengine/.cursor/gh",
+    },
     ...opts,
   });
 }
@@ -100,7 +104,16 @@ function commitSnapshots(report, files) {
   if (!String(remotes.stdout || "").includes("origin")) {
     return { committed: true, pushed: false, reason: "no origin yet" };
   }
-  const push = git(["-c", "http.version=HTTP/1.1", "push", "-u", "origin", "HEAD"]);
+  const push = git([
+    "-c",
+    "http.version=HTTP/1.1",
+    "-c",
+    "http.postBuffer=524288000",
+    "push",
+    "-u",
+    "origin",
+    "HEAD",
+  ]);
   if (push.status !== 0) {
     return { committed: true, pushed: false, reason: (push.stderr || push.stdout || "git push failed").trim() };
   }
