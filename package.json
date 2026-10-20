@@ -1,0 +1,58 @@
+{
+  "name": "tdengine-aio-smoketest",
+  "productName": "TDengine All-in-One Smoketest",
+  "version": "1.4.0",
+  "description": "Electron app that smoke-tests TDengine All-in-One Linux, Windows, and Docker packages from the live download center.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "daily": "node cli.js daily",
+    "watch": "node cli.js watch",
+    "preview": "node cli.js preview",
+    "pack": "electron-builder --mac dir",
+    "postinstall": "electron --version"
+  },
+  "build": {
+    "appId": "com.tdengine.aio-smoketest",
+    "productName": "TDengine All-in-One Smoketest",
+    "copyright": "TDengine",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "engine.js",
+      "feishu.js",
+      "ai-summary.js",
+      "time.js",
+      "report.js",
+      "runner.js",
+      "snapshot.js",
+      "cli.js",
+      "renderer/**/*",
+      "build/icon.png",
+      "build/icon.icns"
+    ],
+    "mac": {
+      "icon": "build/icon.icns",
+      "category": "public.app-category.developer-tools",
+      "identity": null,
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ]
+    }
+  },
+  "author": "TDengine",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "electron": "^37.7.0",
+    "electron-builder": "^26.15.3"
+  }
+}

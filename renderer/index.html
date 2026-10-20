@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self';" />
+    <title>TDengine All-in-One Smoketest</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <img class="logo" src="assets/tdengine.svg" alt="TDengine" />
+          <div class="brand-copy">
+            <div class="product">All-in-One Smoketest</div>
+            <div class="live" id="live-line">Connecting to downloads.tdengine.com…</div>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button id="refresh-btn" class="ghost" type="button">Refresh catalog</button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>Test what the download center is shipping right now</h1>
+          <p>
+            Every run fetches the current Apex catalog, then checks Linux, Windows, and Docker
+            All-in-One artifacts. No cached versions.
+          </p>
+        </div>
+        <div class="version-grid" id="version-grid">
+          <div class="chip"><span>Channel</span><strong id="v-channel">—</strong></div>
+          <div class="chip"><span>TSDB</span><strong id="v-tsdb">—</strong></div>
+          <div class="chip"><span>IDMP</span><strong id="v-idmp">—</strong></div>
+          <div class="chip"><span>TDgpt</span><strong id="v-tdgpt">—</strong></div>
+          <div class="chip"><span>TDmodel</span><strong id="v-tdmodel">—</strong></div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <div class="toggles">
+          <label class="toggle"><input id="p-linux" type="checkbox" checked /><span>Linux host</span></label>
+          <label class="toggle"><input id="p-windows" type="checkbox" checked /><span>Windows host</span></label>
+          <label class="toggle"><input id="p-docker" type="checkbox" checked /><span>Docker</span></label>
+        </div>
+        <div class="actions">
+          <button id="run-btn" class="primary" type="button">Run smoke tests</button>
+          <button id="copy-btn" class="ghost" type="button">Copy failures</button>
+          <button id="save-btn" class="ghost" type="button">Export report</button>
+          <button id="feishu-btn" class="feishu" type="button" disabled>Send to Feishu</button>
+        </div>
+      </section>
+
+      <section class="stats" id="stats">
+        <div class="stat" data-platform="linux"><em>Linux</em><strong id="s-linux">—</strong></div>
+        <div class="stat" data-platform="windows"><em>Windows</em><strong id="s-windows">—</strong></div>
+        <div class="stat" data-platform="docker"><em>Docker</em><strong id="s-docker">—</strong></div>
+        <div class="stat total"><em>Total</em><strong id="s-total">—</strong></div>
+      </section>
+
+      <section class="hash-panel" id="hash-panel" hidden>
+        <div class="hash-label">This run</div>
+        <div class="hash-body" id="hash-body"></div>
+      </section>
+
+      <section class="ai-panel" id="ai-panel" hidden>
+        <div class="ai-label">In plain English</div>
+        <div class="ai-body" id="ai-body"></div>
+      </section>
+
+      <div class="progress-wrap">
+        <div class="progress"><i id="bar"></i></div>
+        <div class="status" id="status">Ready. Catalog is loaded from the live download center on every run.</div>
+      </div>
+
+      <section class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>Component</th>
+              <th>Artifact</th>
+              <th>Status</th>
+              <th>HTTP</th>
+              <th>Size</th>
+              <th>Hash</th>
+              <th>Detail</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+            <tr class="empty"><td colspan="8">Press Run smoke tests to check the current All-in-One packages.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

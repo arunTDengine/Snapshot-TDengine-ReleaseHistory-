@@ -1,0 +1,469 @@
+{
+  "fetched_at": "2026-10-20T19:30:34.947Z",
+  "fetched_at_pt": "Tue, Oct 20, 2026, 12:30 PM PDT",
+  "channel": "20261020",
+  "components": {
+    "tsdb": "3.4.3.5",
+    "idmp": "2.0.2.6",
+    "tdgpt": "3.4.3.3",
+    "tdmodel": "1.0.13"
+  },
+  "trigger": "once",
+  "summary": {
+    "passed": 43,
+    "failed": 0,
+    "total": 43,
+    "platforms": {
+      "linux": {
+        "pass": 20,
+        "fail": 0,
+        "total": 20
+      },
+      "windows": {
+        "pass": 10,
+        "fail": 0,
+        "total": 10
+      },
+      "docker": {
+        "pass": 13,
+        "fail": 0,
+        "total": 13
+      }
+    },
+    "failures": []
+  },
+  "results": [
+    {
+      "platform": "linux",
+      "component": "apex",
+      "name": "install.sh",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "56.7 KiB",
+      "sha256": ""
+    },
+    {
+      "platform": "windows",
+      "component": "apex",
+      "name": "TDengineSetup-x64.exe",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "14.9 MiB",
+      "sha256": ""
+    },
+    {
+      "platform": "linux",
+      "component": "tsdb",
+      "name": "tsdb-3.4.3.5.yaml",
+      "ok": true,
+      "http": 200,
+      "detail": "manifest",
+      "size": "",
+      "sha256": ""
+    },
+    {
+      "platform": "windows",
+      "component": "tsdb",
+      "name": "vc-runtime-windows-x64.exe",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "17.7 MiB",
+      "sha256": "8995548dfffc"
+    },
+    {
+      "platform": "linux",
+      "component": "tsdb",
+      "name": "tsdb-linux-x64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "369.4 MiB",
+      "sha256": "203814610e83"
+    },
+    {
+      "platform": "linux",
+      "component": "tsdb",
+      "name": "tsdb-linux-arm64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "382.1 MiB",
+      "sha256": "f3bbae2cf19c"
+    },
+    {
+      "platform": "windows",
+      "component": "tsdb",
+      "name": "tsdb-windows-x64.exe",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "334.5 MiB",
+      "sha256": "737c578ea776"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "idmp-2.0.2.6.yaml",
+      "ok": true,
+      "http": 200,
+      "detail": "manifest",
+      "size": "",
+      "sha256": ""
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "jre21-linux-x64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "49.7 MiB",
+      "sha256": "e5038aae3ca9"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "jre21-linux-arm64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "48.8 MiB",
+      "sha256": "fa23d9d99450"
+    },
+    {
+      "platform": "windows",
+      "component": "idmp",
+      "name": "jre21-windows-x64.zip",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "46.7 MiB",
+      "sha256": "be26677aaa20"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "chromium-headless-shell-linux-x64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "103.8 MiB",
+      "sha256": "a965f8255ecb"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "chromium-headless-shell-linux-arm64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "106.1 MiB",
+      "sha256": "f4ebd4c394d3"
+    },
+    {
+      "platform": "windows",
+      "component": "idmp",
+      "name": "chromium-headless-shell-win64.zip",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "91.0 MiB",
+      "sha256": "c745ef87016c"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "ffmpeg-linux-x64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "2.3 MiB",
+      "sha256": "26fd45400e18"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "ffmpeg-linux-arm64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "1.6 MiB",
+      "sha256": "b6567633e319"
+    },
+    {
+      "platform": "windows",
+      "component": "idmp",
+      "name": "ffmpeg-win64.zip",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "1.3 MiB",
+      "sha256": "8d08827c019a"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "idmp-linux-x64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "598.6 MiB",
+      "sha256": "0eb08ea022f6"
+    },
+    {
+      "platform": "linux",
+      "component": "idmp",
+      "name": "idmp-linux-arm64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "579.3 MiB",
+      "sha256": "de002cbea7f1"
+    },
+    {
+      "platform": "windows",
+      "component": "idmp",
+      "name": "idmp-windows-x64.exe",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "568.2 MiB",
+      "sha256": "4739a32284f5"
+    },
+    {
+      "platform": "linux",
+      "component": "tdgpt",
+      "name": "tdgpt-3.4.3.3.yaml",
+      "ok": true,
+      "http": 200,
+      "detail": "manifest",
+      "size": "",
+      "sha256": ""
+    },
+    {
+      "platform": "linux",
+      "component": "tdgpt",
+      "name": "python-runtime-linux-x64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "31.5 MiB",
+      "sha256": "cb577d547dcc"
+    },
+    {
+      "platform": "linux",
+      "component": "tdgpt",
+      "name": "python-runtime-linux-arm64.tar.gz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "27.2 MiB",
+      "sha256": "901c886a78ee"
+    },
+    {
+      "platform": "windows",
+      "component": "tdgpt",
+      "name": "python-runtime-win-x64.zip",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "22.5 MiB",
+      "sha256": "e694ef0964e1"
+    },
+    {
+      "platform": "linux",
+      "component": "tdgpt",
+      "name": "tdgpt-venv-linux-x64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "98.8 MiB",
+      "sha256": "6ab0a92a40c8"
+    },
+    {
+      "platform": "linux",
+      "component": "tdgpt",
+      "name": "tdgpt-venv-linux-arm64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "90.5 MiB",
+      "sha256": "b55598d55d9a"
+    },
+    {
+      "platform": "windows",
+      "component": "tdgpt",
+      "name": "tdgpt-venv-win-x64.zip",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "171.4 MiB",
+      "sha256": "69b824ae3289"
+    },
+    {
+      "platform": "linux",
+      "component": "tdgpt",
+      "name": "tdgpt-linux-x64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "156.0 KiB",
+      "sha256": "d6a5914188f4"
+    },
+    {
+      "platform": "linux",
+      "component": "tdgpt",
+      "name": "tdgpt-linux-arm64.tar.xz",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "155.9 KiB",
+      "sha256": "25500c82c773"
+    },
+    {
+      "platform": "windows",
+      "component": "tdgpt",
+      "name": "tdgpt-win-x64.exe",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "2.0 MiB",
+      "sha256": "cde7fec25429"
+    },
+    {
+      "platform": "docker",
+      "component": "apex",
+      "name": "install.sh (docker mode)",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "56.7 KiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "apex-docker",
+      "name": "tdengine.sh",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "18.8 KiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "apex-docker",
+      "name": "tdengine.ps1",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "29.2 KiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "apex-docker",
+      "name": "docker-compose-tdengine.yml",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "6.8 KiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "apex-docker",
+      "name": ".env.example",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "150 B",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "apex-docker",
+      "name": "init-anode.sql",
+      "ok": true,
+      "http": 200,
+      "detail": "available",
+      "size": "95 B",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "image",
+      "name": "tdengine/cls:latest",
+      "ok": true,
+      "http": 200,
+      "detail": "Docker Hub latest=latest updated=2026-09-30T04:32:40",
+      "size": "21.3 MiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "image",
+      "name": "tdengine/idmp-ai-ee:latest",
+      "ok": true,
+      "http": 200,
+      "detail": "Docker Hub latest=latest updated=2026-10-18T09:18:07",
+      "size": "234.8 MiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "image",
+      "name": "tdengine/idmp-backend-ee:latest",
+      "ok": true,
+      "http": 200,
+      "detail": "Docker Hub latest=latest updated=2026-10-18T09:08:17",
+      "size": "546.9 MiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "image",
+      "name": "tdengine/idmp-ui-ee:latest",
+      "ok": true,
+      "http": 200,
+      "detail": "Docker Hub latest=latest updated=2026-10-18T09:13:51",
+      "size": "178.8 MiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "image",
+      "name": "tdengine/tdgpt-lite:latest",
+      "ok": true,
+      "http": 200,
+      "detail": "Docker Hub latest=latest updated=2026-10-19T10:17:47",
+      "size": "288.3 MiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "image",
+      "name": "tdengine/tdmodel:latest",
+      "ok": true,
+      "http": 200,
+      "detail": "Docker Hub latest=latest updated=2026-08-27T07:05:48",
+      "size": "416.1 MiB",
+      "sha256": ""
+    },
+    {
+      "platform": "docker",
+      "component": "image",
+      "name": "tdengine/tsdb-ee:latest",
+      "ok": true,
+      "http": 200,
+      "detail": "Docker Hub latest=latest updated=2026-10-20T14:31:59",
+      "size": "435.4 MiB",
+      "sha256": ""
+    }
+  ],
+  "aiSummary": "Checked Tue, Oct 20, 2026, 12:30 PM PDT for channel 20261020 (Oct 20, 2026 drop) with TSDB 3.4.3.5 · IDMP 2.0.2.6 · TDgpt 3.4.3.3 · TDmodel 1.0.13. All 43/43 artifacts were reachable and every checked artifact returned a clean download. Linux (20/20), Windows (10/10), and Docker All-in-One (13/13) files are present on the CDN, so installs from this channel should work. There were no file failures; customers can proceed with installs without file-related errors. Smoke score: **43/43**.",
+  "report": "All-in-One smoke · 20261020 (Oct 20, 2026 drop)\nChecked Tue, Oct 20, 2026, 12:30 PM PDT · Current run\n\nWhat's live now\n- Channel 20261020 (Oct 20, 2026 drop)\n- TSDB 3.4.3.5 · IDMP 2.0.2.6 · TDgpt 3.4.3.3 · TDmodel 1.0.13\n\nThis run\n- 43/43 artifacts reachable\n- Every checked artifact returned a clean download.\n\nCustomer takeaway\n- This drop is on the CDN. Linux, Windows, and Docker All-in-One installs from the stable channel should work.\n- Linux host: 20/20 files reachable. Stable-channel installs on this path look publish-ready.\n- Windows host: 10/10 files reachable. Stable-channel installs on this path look publish-ready.\n- Docker All-in-One: 13/13 files reachable. Stable-channel installs on this path look publish-ready."
+}
