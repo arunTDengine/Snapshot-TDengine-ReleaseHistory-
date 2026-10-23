@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-10-23T15:42:00.260Z",
-  "fetched_at_pt": "Fri, Oct 23, 2026, 8:42 AM PDT",
+  "fetched_at": "2026-10-23T15:44:54.378Z",
+  "fetched_at_pt": "Fri, Oct 23, 2026, 8:44 AM PDT",
   "channel": "20261023",
   "components": {
     "tsdb": "3.4.3.5",
@@ -464,6 +464,6 @@
       "sha256": ""
     }
   ],
-  "aiSummary": "Checked Fri, Oct 23, 2026, 8:42 AM PDT: live channel 20261023 (Oct 23, 2026 drop) with TSDB 3.4.3.5, IDMP 2.0.2.8, TDgpt 3.4.3.3, and TDmodel 1.0.13. All 43/43 artifacts were reachable and every checked artifact returned a clean download. Linux (20/20), Windows (10/10) and Docker All-in-One (13/13) CDN paths are present, so installs fetched from this channel should work for customers. The smoketest only verifies file presence on the CDN and does not execute installers. Smoke score: 43/43.",
-  "report": "All-in-One smoke · 20261023 (Oct 23, 2026 drop)\nChecked Fri, Oct 23, 2026, 8:42 AM PDT · Daily 7:00 AM PT brief\n\nWhat's live now\n- Channel 20261023 (Oct 23, 2026 drop)\n- TSDB 3.4.3.5 · IDMP 2.0.2.8 · TDgpt 3.4.3.3 · TDmodel 1.0.13\n\nThis run\n- 43/43 artifacts reachable\n- Every checked artifact returned a clean download.\n\nCustomer takeaway\n- This drop is on the CDN. Linux, Windows, and Docker All-in-One installs from the stable channel should work.\n- Linux host: 20/20 files reachable. Stable-channel installs on this path look publish-ready.\n- Windows host: 10/10 files reachable. Stable-channel installs on this path look publish-ready.\n- Docker All-in-One: 13/13 files reachable. Stable-channel installs on this path look publish-ready."
+  "aiSummary": "Checked Fri, Oct 23, 2026, 8:44 AM PDT: Channel 20261023 is live with TSDB 3.4.3.5, IDMP 2.0.2.8, TDgpt 3.4.3.3, and TDmodel 1.0.13. This run found all 43/43 artifacts reachable and each returned a clean download. Linux (20/20), Windows (10/10), and Docker All-in-One (13/13) artifact paths were reachable, so installs from this stable channel should work. Note: the smoketest only checks CDN file availability and does not run installers. Smoke score: 43/43.",
+  "report": "All-in-One smoke · 20261023 (Oct 23, 2026 drop)\nChecked Fri, Oct 23, 2026, 8:44 AM PDT · Daily 7:00 AM PT brief\n\nWhat's live now\n- Channel 20261023 (Oct 23, 2026 drop)\n- TSDB 3.4.3.5 · IDMP 2.0.2.8 · TDgpt 3.4.3.3 · TDmodel 1.0.13\n\nThis run\n- 43/43 artifacts reachable\n- Every checked artifact returned a clean download.\n\nCustomer takeaway\n- This drop is on the CDN. Linux, Windows, and Docker All-in-One installs from the stable channel should work.\n- Linux host: 20/20 files reachable. Stable-channel installs on this path look publish-ready.\n- Windows host: 10/10 files reachable. Stable-channel installs on this path look publish-ready.\n- Docker All-in-One: 13/13 files reachable. Stable-channel installs on this path look publish-ready."
 }
