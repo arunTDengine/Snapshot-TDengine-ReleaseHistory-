@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-10-20T19:30:34.947Z",
-  "fetched_at_pt": "Tue, Oct 20, 2026, 12:30 PM PDT",
-  "channel": "20261020",
+  "fetched_at": "2026-10-23T15:42:00.260Z",
+  "fetched_at_pt": "Fri, Oct 23, 2026, 8:42 AM PDT",
+  "channel": "20261023",
   "components": {
     "tsdb": "3.4.3.5",
-    "idmp": "2.0.2.6",
+    "idmp": "2.0.2.8",
     "tdgpt": "3.4.3.3",
     "tdmodel": "1.0.13"
   },
-  "trigger": "once",
+  "trigger": "daily",
   "summary": {
     "passed": 43,
     "failed": 0,
@@ -106,7 +106,7 @@
     {
       "platform": "linux",
       "component": "idmp",
-      "name": "idmp-2.0.2.6.yaml",
+      "name": "idmp-2.0.2.8.yaml",
       "ok": true,
       "http": 200,
       "detail": "manifest",
@@ -210,8 +210,8 @@
       "ok": true,
       "http": 200,
       "detail": "available",
-      "size": "598.6 MiB",
-      "sha256": "0eb08ea022f6"
+      "size": "600.1 MiB",
+      "sha256": "9b381b1935ce"
     },
     {
       "platform": "linux",
@@ -220,8 +220,8 @@
       "ok": true,
       "http": 200,
       "detail": "available",
-      "size": "579.3 MiB",
-      "sha256": "de002cbea7f1"
+      "size": "580.8 MiB",
+      "sha256": "2b6c839c4b4e"
     },
     {
       "platform": "windows",
@@ -230,8 +230,8 @@
       "ok": true,
       "http": 200,
       "detail": "available",
-      "size": "568.2 MiB",
-      "sha256": "4739a32284f5"
+      "size": "570.4 MiB",
+      "sha256": "3476d801b4ff"
     },
     {
       "platform": "linux",
@@ -409,8 +409,8 @@
       "name": "tdengine/idmp-ai-ee:latest",
       "ok": true,
       "http": 200,
-      "detail": "Docker Hub latest=latest updated=2026-10-18T09:18:07",
-      "size": "234.8 MiB",
+      "detail": "Docker Hub latest=latest updated=2026-10-23T04:34:46",
+      "size": "235.2 MiB",
       "sha256": ""
     },
     {
@@ -419,8 +419,8 @@
       "name": "tdengine/idmp-backend-ee:latest",
       "ok": true,
       "http": 200,
-      "detail": "Docker Hub latest=latest updated=2026-10-18T09:08:17",
-      "size": "546.9 MiB",
+      "detail": "Docker Hub latest=latest updated=2026-10-23T03:57:03",
+      "size": "553.0 MiB",
       "sha256": ""
     },
     {
@@ -429,8 +429,8 @@
       "name": "tdengine/idmp-ui-ee:latest",
       "ok": true,
       "http": 200,
-      "detail": "Docker Hub latest=latest updated=2026-10-18T09:13:51",
-      "size": "178.8 MiB",
+      "detail": "Docker Hub latest=latest updated=2026-10-23T04:15:24",
+      "size": "178.9 MiB",
       "sha256": ""
     },
     {
@@ -464,6 +464,6 @@
       "sha256": ""
     }
   ],
-  "aiSummary": "Checked Tue, Oct 20, 2026, 12:30 PM PDT for channel 20261020 (Oct 20, 2026 drop) with TSDB 3.4.3.5 · IDMP 2.0.2.6 · TDgpt 3.4.3.3 · TDmodel 1.0.13. All 43/43 artifacts were reachable and every checked artifact returned a clean download. Linux (20/20), Windows (10/10), and Docker All-in-One (13/13) files are present on the CDN, so installs from this channel should work. There were no file failures; customers can proceed with installs without file-related errors. Smoke score: **43/43**.",
-  "report": "All-in-One smoke · 20261020 (Oct 20, 2026 drop)\nChecked Tue, Oct 20, 2026, 12:30 PM PDT · Current run\n\nWhat's live now\n- Channel 20261020 (Oct 20, 2026 drop)\n- TSDB 3.4.3.5 · IDMP 2.0.2.6 · TDgpt 3.4.3.3 · TDmodel 1.0.13\n\nThis run\n- 43/43 artifacts reachable\n- Every checked artifact returned a clean download.\n\nCustomer takeaway\n- This drop is on the CDN. Linux, Windows, and Docker All-in-One installs from the stable channel should work.\n- Linux host: 20/20 files reachable. Stable-channel installs on this path look publish-ready.\n- Windows host: 10/10 files reachable. Stable-channel installs on this path look publish-ready.\n- Docker All-in-One: 13/13 files reachable. Stable-channel installs on this path look publish-ready."
+  "aiSummary": "Checked Fri, Oct 23, 2026, 8:42 AM PDT: live channel 20261023 (Oct 23, 2026 drop) with TSDB 3.4.3.5, IDMP 2.0.2.8, TDgpt 3.4.3.3, and TDmodel 1.0.13. All 43/43 artifacts were reachable and every checked artifact returned a clean download. Linux (20/20), Windows (10/10) and Docker All-in-One (13/13) CDN paths are present, so installs fetched from this channel should work for customers. The smoketest only verifies file presence on the CDN and does not execute installers. Smoke score: 43/43.",
+  "report": "All-in-One smoke · 20261023 (Oct 23, 2026 drop)\nChecked Fri, Oct 23, 2026, 8:42 AM PDT · Daily 7:00 AM PT brief\n\nWhat's live now\n- Channel 20261023 (Oct 23, 2026 drop)\n- TSDB 3.4.3.5 · IDMP 2.0.2.8 · TDgpt 3.4.3.3 · TDmodel 1.0.13\n\nThis run\n- 43/43 artifacts reachable\n- Every checked artifact returned a clean download.\n\nCustomer takeaway\n- This drop is on the CDN. Linux, Windows, and Docker All-in-One installs from the stable channel should work.\n- Linux host: 20/20 files reachable. Stable-channel installs on this path look publish-ready.\n- Windows host: 10/10 files reachable. Stable-channel installs on this path look publish-ready.\n- Docker All-in-One: 13/13 files reachable. Stable-channel installs on this path look publish-ready."
 }
